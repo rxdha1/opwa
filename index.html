@@ -1,7 +1,6 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Mar 05 2025 19:15:37 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="679b009c30dee8170b81d40e" data-wf-site="679b009c30dee8170b81d3d5">
 <head>
-  <link href="styles/modal.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>Operate.Fun Home</title>
   <meta content="Your Web3 AI Operator" name="description">
@@ -55,7 +54,7 @@ html {
     <div class="nav-logo-flex">
       <a href="#" class="home-link w-inline-block"><img src="images/logo-white.PNG" loading="lazy" width="35" height="35" alt="" srcset="images/logo-white-p-500.png 500w, images/logo-white-p-800.png 800w, images/logo-white-p-1080.png 1080w, images/logo-white.PNG 1272w" sizes="(max-width: 479px) 100vw, (max-width: 1439px) 35px, (max-width: 1919px) 2vw, 35px"></a>
     </div>
-      <a href="https://twitter.com/intent/tweet?text=OperateFun%20is%20your%20AI%20trading%20companion%20aka%20Operator%20from%20%40ImaginaryLabs.%20%0A%0AJoin%20the%20waitlist%20%E2%86%92%20operate.fun&amp;url=" target="_blank" rel="noopener noreferrer" class="share-button w-inline-block"></a>
+    <div class="nav-button-flex">
       <a href="https://twitter.com/intent/tweet?text=OperateFun%20is%20your%20AI%20trading%20companion%20aka%20Operator%20from%20%40ImaginaryLabs.%20%0A%0AJoin%20the%20waitlist%20%E2%86%92%20operate.fun&amp;url=" target="_blank" class="share-button w-inline-block"></a>
     </div>
   </div>
@@ -70,7 +69,7 @@ html {
             <div class="window-controls"></div>
             <div class="window-controls"></div>
           </div>
-            <a data-w-id="4812bbbe-70de-d6a1-8825-5bf086efaf09" href="https://app.imaginary-agents.xyz/" target="_blank" rel="noopener noreferrer" class="figma-tab _1 w-inline-block">
+          <div class="figma-tab-bar">
             <a data-w-id="4812bbbe-70de-d6a1-8825-5bf086efaf09" href="https://app.imaginary-agents.xyz/" target="_blank" class="figma-tab _1 w-inline-block">
               <div class="figma-tab-name">Imaginary Agents</div>
               <div class="cursor-highlight-tabs"></div>
@@ -211,6 +210,42 @@ html {
               <div class="share-placeholder-text"></div>
               <div class="share-placeholder-text"></div>
             </div>
+            <a data-w-id="6a17ea24-fcb5-8a9f-395f-55a4051fc3c2" href="https://twitter.com/operatedotfun" target="_blank" class="share-access-row w-inline-block">
+              <div class="share-access-org"><img src="images/diagram.png" loading="lazy" alt="Diagram app logo" class="share-org-img">
+                <div class="share-info-text"><span class="share-org-text">Diagram</span></div>
+              </div>
+              <div class="share-info-text">owner<span class="share-org-text"></span></div>
+            </a>
+            <a href="https://twitter.com/operatedotfun" target="_blank" class="share-access-row w-inline-block">
+              <div class="share-access-org"><img src="images/jordan.jpg" loading="lazy" alt="Image of Jordan Singer" class="share-you-img">
+                <div class="share-info-text">Jordan Singer<span class="share-org-text"></span></div>
+              </div>
+              <div class="share-info-text">can edit<span class="share-org-text"></span></div>
+            </a>
+            <a href="https://twitter.com/rxdha1" target="_blank" class="share-access-row w-inline-block">
+              <div class="share-access-org"><img src="images/sidd.jpg" loading="lazy" alt="Image of Sidd Sharma" class="share-you-img">
+                <div class="share-info-text">Sidd Sharma</div>
+              </div>
+              <div class="share-info-text">can edit<span class="share-org-text"></span></div>
+            </a>
+            <a href="https://twitter.com/decentraluis" target="_blank" class="share-access-row w-inline-block">
+              <div class="share-access-org"><img src="images/andrew.jpg" loading="lazy" alt="Image of Andrew Pouliot" class="share-you-img">
+                <div class="share-info-text">Andrew Pouliot<span class="share-org-text"></span></div>
+              </div>
+              <div class="share-info-text">can edit<span class="share-org-text"></span></div>
+            </a>
+            <a href="https://twitter.com/imaginarylabs" target="_blank" class="share-access-row w-inline-block">
+              <div class="share-access-org"><img src="images/3A63_b90_400x400.jpg" loading="lazy" alt="user image" class="share-you-img">
+                <div class="share-info-text">Marco Cornacchia</div>
+              </div>
+              <div class="share-info-text">can edit<span class="share-org-text"></span></div>
+            </a>
+            <a href="https://twitter.com/operatedotdao" target="_blank" class="share-access-row w-inline-block">
+              <div class="share-access-org"><img src="images/vincent.jpg" loading="lazy" alt="Image of Vincent van der Meulen" class="share-you-img">
+                <div class="share-info-text">Vincent van der Meulen</div>
+              </div>
+              <div class="share-info-text">can edit<span class="share-org-text"></span></div>
+            </a>
             <a href="https://x.com/operatedotfun" target="_blank" class="share-access-row w-inline-block">
               <div class="share-access-org">
                 <div class="share-you-img you">
@@ -415,8 +450,8 @@ html {
     </div>
   </div>
   <div data-w-id="fd114d77-8ee0-9184-4e5c-121b8d8ed7bc" style="opacity:1" class="star-bg"></div>
-  <div id="infoModal">
-    <div class="modal-content">
+
+  <div id="infoModal" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.75); z-index: 9999; overflow-y: auto;">
     <div style="position: relative; background-color: #1a1a1a; padding: 32px; border-radius: 16px; max-width: 500px; width: 90%; margin: 40px auto; box-shadow: 0 4px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
         <h2 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 600;">Information</h2>
@@ -431,8 +466,8 @@ html {
     </div>
   </div>
 
-  <div id="waitlistModal">
-    <div class="modal-content">
+  <!-- Formspree form -->
+  <div id="waitlistModal" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.75); z-index: 9999; overflow-y: auto;">
     <div style="position: relative; background-color: #1a1a1a; padding: 32px; border-radius: 16px; max-width: 500px; width: 90%; margin: 40px auto; box-shadow: 0 4px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
         <h2 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 600;">Join Operate.Fun Waitlist</h2>
