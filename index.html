@@ -45,18 +45,37 @@ html {
         background: #9292af;
     }
 </style>
+  <script>
+    const openWaitlistForm = showForm;
+    
+    function showForm(event) {
+        event.preventDefault();
+        document.getElementById('waitlistModal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+  </script>
 </head>
 <body class="body">
   <!-- <div class="nav">
     <a href="waitlist.html" target="_blank" class="nav-button w-button">Join Waitlist</a> -->
   <div class="nav">
-    <a href="#" class="nav-button w-button" onclick="openWaitlistForm(event)">Join Waitlist</a>
+    <!-- <a href="#" class="nav-button w-button" onclick="openWaitlistForm(event)">Join Waitlist</a> -->
+    <div class="nav-left">
+      <a href="#" class="nav-button w-button" onclick="showForm(event)">Join Waitlist</a>
+    </div>
+
+    
     <div class="nav-logo-flex">
       <a href="#" class="home-link w-inline-block"><img src="images/logo-white.PNG" loading="lazy" width="35" height="35" alt="" srcset="images/logo-white-p-500.png 500w, images/logo-white-p-800.png 800w, images/logo-white-p-1080.png 1080w, images/logo-white.PNG 1272w" sizes="(max-width: 479px) 100vw, (max-width: 1439px) 35px, (max-width: 1919px) 2vw, 35px"></a>
     </div>
-    <div class="nav-button-flex">
+    <!-- <div class="nav-button-flex">
       <a href="https://twitter.com/intent/tweet?text=OperateFun%20is%20your%20AI%20trading%20companion%20aka%20Operator%20from%20%40ImaginaryLabs.%20%0A%0AJoin%20the%20waitlist%20%E2%86%92%20operate.fun&amp;url=" target="_blank" class="share-button w-inline-block"></a>
+    </div> -->
+
+    <div class="nav-right">
+      <a href="#" class="nav-button w-button" onclick="openInfoModal(event)">Info</a>
     </div>
+    
   </div>
   <div data-w-id="bb1915dd-36f8-d23d-5923-4e4669e722a3" class="_100vh">
     <div data-w-id="5509f1ef-9131-758b-402e-ebc447a4d542" class="figma">
@@ -502,26 +521,6 @@ html {
           Join Waitlist
         </button>
       </form>
-    </div>
-  </div>
-
-  <!-- <div class="nav">
-    <a href="#" class="nav-button w-button" onclick="showForm(event)">Join Waitlist</a>
-  </div> -->
-
-  <div class="nav">
-    <div class="nav-left">
-      <a href="#" class="nav-button w-button" onclick="openWaitlistForm(event)">Join Waitlist</a>
-    </div>
-
-    <div class="nav-logo-flex">
-      <a href="#" class="home-link w-inline-block">
-        <img src="images/logo-white.PNG" loading="lazy" width="35" height="35" alt="" srcset="images/logo-white-p-500.png 500w, images/logo-white-p-800.png 800w, images/logo-white-p-1080.png 1080w, images/logo-white.PNG 1272w" sizes="(max-width: 479px) 100vw, (max-width: 1439px) 35px, (max-width: 1919px) 2vw, 35px">
-      </a>
-    </div>
-    
-    <div class="nav-right">
-      <a href="#" class="nav-button w-button" onclick="openInfoModal(event)">Info</a>
     </div>
   </div>
   
